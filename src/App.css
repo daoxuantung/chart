@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chart {
+  width: 100%;
+  height: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.datepicker-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 80px;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.datepicker-box__title {
+  margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-input {
+  padding: 5px 10px;
+  margin-right: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 219px;
+  cursor: pointer;
+}
+
+.custom-input--submit {
+  width: 60px;
+  margin-right: 20px;
+  color: #fff;
+  background-color: #007bff;
+}
+
+.custom-input,
+.datepicker-box__calendar {
+  border: 1px solid #aaa;
+}
+
+.datepicker-box__calendar {
+  background-color: #fff;
+}
+
+.react-datepicker__triangle {
+  display: none;
+}
+
+.react-datepicker-wrapper {
+  width: auto;
+}
+
+.react-datepicker__month-text.react-datepicker__month--selected,
+.react-datepicker__month-text.react-datepicker__month--in-range,
+.react-datepicker__month-text.react-datepicker__month--selected:hover,
+.react-datepicker__month-text.react-datepicker__month--in-range:hover {
+  background-color: #007bff !important;
 }
